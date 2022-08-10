@@ -1,7 +1,7 @@
 **Welcome to Music Match App's documentation. **
 
 Music Match App
-URL: 
+URL: https://musicmatchapp.herokuapp.com/home/
 
 Music Match is a Music Exploration Application built with a React JS front-end and a Node.js back-end linked to the Spotify Web API using the spotify-web-api-node-library. The app was designed to help expedite and expand the discover of new music in a user friendly way that anyone can enjoy. Once registered and logged in, users can connec their Spofity accounts and view a dashboard of playlist and song recommendations for them based of of thier existing account information. The app features a music player so users can listen to the playlists and songs that they're exploring and browse new music. The app also has a search songs + lyrics feature which was allows users to search for songs and artists  and listen / view the lyrics during playback.
 
