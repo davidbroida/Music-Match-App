@@ -3,7 +3,9 @@ import SearchPage from './SearchPage';
 import Dashboard from './Dashboard';
 
 function WelcomePage() {
-  const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=04306bc8614e44bbb0f6f8071bb81e01&response_type=code&redirect_uri=http://localhost:3000&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
+
+  const host = window.location.origin;
+  const AUTH_URL = "https://accounts.spotify.com/authorize?client_id=04306bc8614e44bbb0f6f8071bb81e01&response_type=code&redirect_uri=" + host + "/&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state";
 
   const code = new URLSearchParams(window.location.search).get('code');
 

@@ -9,6 +9,9 @@
     "jsonschema": "^1.4.0",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "pg": "^8.7.3"
+    "pg": "^8.7.3",
+    "lyrics-finder": "^21.7.0",
+    "nodemon": "^2.0.16",
+    "spotify-web-api-node": "^5.0.2"
   }
 }

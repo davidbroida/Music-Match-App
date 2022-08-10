@@ -7,9 +7,11 @@ import Player from './Player';
 import useAuth from '../hooks/useAuth';
 
 
+
 const SpotifyApi = new SpotifyWebApi({
   clientId: '04306bc8614e44bbb0f6f8071bb81e01'
 })
+
 
 function SearchPage() {
   // let code = localStorage.getItem('code');
@@ -31,7 +33,7 @@ function SearchPage() {
   useEffect(() => {
     if (!playingSong) return
 
-    axios.get('http://localhost:3001/lyrics', {
+    axios.get('/lyrics', {
       params: {
         track: playingSong.title,
         artist: playingSong.artist,

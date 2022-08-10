@@ -15,7 +15,7 @@ app.post('/refresh', (req, res) => {
   console.log(refreshToken);
   console.log("hi")
   const spotifyApi = new SpotifyWebApi({
-    redirectUri: 'http://localhost:3000',
+    redirectUri: window.location.origin,
     clientId: '04306bc8614e44bbb0f6f8071bb81e01',
     clientSecret: '70b523ade19f49008e534f21fae028c8',
     refreshToken
@@ -38,7 +38,7 @@ app.post('/refresh', (req, res) => {
 app.post('/login', (req, res) => {
   const code = req.body.code;
   const spotifyApi = new SpotifyWebApi({
-    redirectUri: 'http://localhost:3000',
+    redirectUri: window.location.origin,
     clientId: '04306bc8614e44bbb0f6f8071bb81e01',
     clientSecret: '70b523ade19f49008e534f21fae028c8',
   })
